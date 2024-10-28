@@ -1,4 +1,5 @@
 n=int(input())
+
 def f(n):
     if n<0:
         raise ValueError()
@@ -6,4 +7,5 @@ def f(n):
     for i in range(1,n+1):
         result *= i
     return result
+
 print(f(n))
