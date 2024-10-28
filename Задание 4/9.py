@@ -1,4 +1,5 @@
 N=int(input())
+
 def f(n):
     a,b=0,1
     summa=0
