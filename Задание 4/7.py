@@ -1,4 +1,5 @@
 n=int(input())
+
 def f(n):
     summa=0
     r=1
@@ -6,4 +7,5 @@ def f(n):
         r *=i
         summa += r
     return summa
+
 print(f'сумма факториалов равна {f(n)}')
