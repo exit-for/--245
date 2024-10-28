@@ -1,0 +1,12 @@
+def remove_dot_and_count(s):
+    count = s.count('.')  
+    s = s.replace('.', '') 
+    return s, count
+
+# Пример использования
+input_string = "Пример строки с. несколькими. точками.1.1.1.1.1. их 8"
+result_string, removed_count = remove_dot_and_count(input_string)
+
+print("Результат:", result_string)
+
+print("Количество удаленных символов:", removed_count)
