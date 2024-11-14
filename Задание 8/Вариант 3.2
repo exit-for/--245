@@ -1,0 +1,13 @@
+def sort_letters_in_words(input_string):
+    """Сортирует буквы в каждом слове строки по алфавиту."""
+    # Разделяем строку на слова
+    words = input_string.split()
+    # Сортируем буквы в каждом слове и объединяем обратно в строку
+    sorted_words = [''.join(sorted(word)) for word in words]
+    # Объединяем отсортированные слова обратно в строку
+    return ' '.join(sorted_words)
+
+# Пример использования
+input_string = input("Введите строку: ")
+result = sort_letters_in_words(input_string)
+print(f"Результат: {result}")
