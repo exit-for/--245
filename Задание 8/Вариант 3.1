@@ -1,0 +1,29 @@
+import math
+
+def calculate_hypotenuse(cathetus1, cathetus2):
+    """Вычисляет длину гипотенузы по теореме Пифагора."""
+    return math.sqrt(cathetus1**2 + cathetus2**2)
+
+# Вводим катеты для первого треугольника
+cathetus1_triangle1 = float(input("Введите длину первого катета первого треугольника: "))
+cathetus2_triangle1 = float(input("Введите длину второго катета первого треугольника: "))
+
+# Вводим катеты для второго треугольника
+cathetus1_triangle2 = float(input("Введите длину первого катета второго треугольника: "))
+cathetus2_triangle2 = float(input("Введите длину второго катета второго треугольника: "))
+
+# Вычисляем гипотенузы
+hypotenuse1 = calculate_hypotenuse(cathetus1_triangle1, cathetus2_triangle1)
+hypotenuse2 = calculate_hypotenuse(cathetus1_triangle2, cathetus2_triangle2)
+
+# Выводим результаты
+print(f"Гипотенуза первого треугольника: {hypotenuse1}")
+print(f"Гипотенуза второго треугольника: {hypotenuse2}")
+
+# Сравниваем гипотенузы
+if hypotenuse1 > hypotenuse2:
+    print("Гипотенуза первого треугольника больше гипотенузы второго треугольника.")
+elif hypotenuse1 < hypotenuse2:
+    print("Гипотенуза второго треугольника больше гипотенузы первого треугольника.")
+else:
+    print("Гипотенузы равны.")
